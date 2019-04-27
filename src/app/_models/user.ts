@@ -1,11 +1,18 @@
 import { Role } from './role';
 
 export class User {
-    id: string;
+// tslint:disable-next-line: variable-name
+    _id: string;
     email: string;
-    password: string;
-    firstName: string;
-    lastName: string;
-    role: Role;
+    username: string;
+    // password: string;
+// tslint:disable-next-line: variable-name
+    first_name: string;
+// tslint:disable-next-line: variable-name
+    last_name: string;
+    roles: Role[];
     token?: string;
+    expires?: string;
+    // tslint:disable-next-line:variable-name
+    is_banned?: boolean;
 }
